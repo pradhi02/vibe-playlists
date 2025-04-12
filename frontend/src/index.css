@@ -1,0 +1,61 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 250 20% 10%;
+    --foreground: 210 40% 98%;
+
+    --card: 250 20% 13%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 250 20% 13%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 252 80% 74%;
+    --primary-foreground: 250 20% 10%;
+
+    --secondary: 270 50% 45%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 250 20% 20%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 260 40% 60%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 250 20% 20%;
+    --input: 250 20% 20%;
+    --ring: 252 80% 74%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background-image: 
+      radial-gradient(circle at top left, rgba(126, 105, 171, 0.1) 0%, transparent 25%),
+      radial-gradient(circle at bottom right, rgba(155, 135, 245, 0.1) 0%, transparent 25%);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+  }
+}
+
+.music-wave {
+  @apply flex items-end h-4 space-x-0.5;
+}
+
+.music-wave-bar {
+  @apply w-1 bg-music-primary rounded-t-sm;
+}
