@@ -1,9 +1,11 @@
 import { GeminiResponse, Playlist } from "../types/music";
 import { mockPlaylists } from "./mockData";
+const baseUrl = import.meta.env.VITE_BACKEND_URL;
+
 
 export const callGeminiApi = async (prompt: string): Promise<string> => {
   try {
-    const response = await fetch('http://localhost:3001/gemini', {
+    const response = await fetch(`${baseUrl}/gemini`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
