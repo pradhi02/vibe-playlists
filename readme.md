@@ -10,10 +10,6 @@ AI-powered. Emotion-fueled. Zero scrolling, full serotonin. 📈
 When words fail, music speaks.  
 When effort fails, **VibeSync** delivers.
 
----
-
-## 🌟 Features
-
 ### 🎶 Mood/Activity-Based Playlists  
 Enter a mood like `"Happy"` or an activity like `"Studying"` to get 3 creative and personalized playlists.
 
@@ -68,3 +64,6 @@ npm run dev
 cd backend
 npm install
 wrangler dev
+=======
+👉 Go ahead. Type your vibe. Let the beat do the rest.
+
